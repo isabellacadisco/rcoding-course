@@ -214,10 +214,14 @@ rev(w) # reverse the order of `w`
 # language, they are one of the most surprising features of R. Consider the 
 # following simple snippet of code that plots a sine curve:
 
-values <- seq(0, 2 * pi, length = 100)
+values <- seq(0, 2 * pi, length = 100) # sequence of 100 values
+# want to calculate the sin of these values
+# this is STANDARD EVALUATION, pi already defined in R
 sinx <- sin(values)
 
+# just plotting this
 plot(x = values, y = sinx, type = "l")
+
 plot(x = values, y = sin(values), type = "l")
 
 # Look at the labels on the axes. How did R know that the variable on the x 
